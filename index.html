@@ -429,5 +429,15 @@ document.querySelectorAll('[style*="opacity:0"]').forEach(el => {
   el.style.transform = "none";
 });
 </script>
+  <script>
+const btn = document.querySelector('.w-nav-button');
+const menu = document.querySelector('.w-nav-menu');
+
+if (btn && menu) {
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('w--open');
+  });
+}
+</script>
 </body>
 </html>
